@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADD Dream project main page</title>
+    <link rel="stylesheet" href="adddream3.css">
+</head>
+
+<body>
+    <div class="header">
+        <nav>
+            <h2>Course Mangement</h2>
+            <ul>
+                <li><a class="main" href="adddream3.html">Home</a></li>
+            
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="adddream1.html">Login</a></li>
+            </ul>
+        </nav>
+        
+    </div>
+    <div class="topic">
+        <h1>Welcome to </h1>
+        <span>course management</span>
+        <h3>system</h3>  
+    </div>
+    <div class="register">
+          <input type="button" value="Register" onclick="redirectToRegister()" >
+          <button> 
+    </div>
+    <div class="courses-section">
+        <div class="course">
+            <h3>Full Stack with AI</h3>
+            <p>Master full-stack web development with a focus on Artificial Intelligence. Learn the latest technologies and build real-world projects.</p>
+            <p class="price">₹2999 per year</p>
+            <p class="limited">Limited Seats Available</p>
+            <input type="button" value="Register Now" onclick="redirectToPremium()">
+        </div>
+        
+        <div class="course">
+            <h3>Cyber Security</h3>
+            <p>Secure networks, protect systems, and become a certified cyber security expert. Learn ethical hacking and defensive strategies.</p>
+            <p class="price">₹3999 per year</p>
+            <p class="limited">Limited Seats Available</p>
+            <input type="button" value="Register Now" onclick="redirectToPremium()">
+        </div>
+
+        <div class="course">
+            <h3>IoT - Internet of Things</h3>
+            <p>Explore the world of IoT. Learn to connect devices and build smart systems for automation and data analysis.</p>
+            <p class="price">₹1999 per year</p>
+            <p class="limited">Limited Seats Available</p>
+            <input type="button" value="Register Now" onclick="redirectToPremium()">
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Course Management System. All rights reserved.</p>
+    </div>
+</body>
+</html>
+<script>
+function redirectToRegister()
+ {
+   location.replace("C:/Users/HP/Desktop/Html%20and%20css%20project%201%20-%20Copy/ADD/adddream/index.html")
+}
+function redirectToPremium()
+{
+    location.replace("C:/Users/HP/Desktop/Html and css project 1 - Copy/ADD/adddream/course.html")
+}
+</script>
+

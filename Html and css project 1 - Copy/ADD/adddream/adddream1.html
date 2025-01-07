@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login pages</title>
+    <link rel="stylesheet" href="adddream1.css">
+</head>
+
+<body>
+    <h4 class="back"><a href="adddream3.html">BACK TO HOME</a></h4>
+    
+    <div>
+        <h1 class="head-container">Login</h1>
+    
+    <div class="input-box">
+        <input type="text" id="username" placeholder="">
+        <span>Username</span>
+
+    </div>
+    <div class="input-box">
+        <input type="text" id="password" placeholder="">
+        <span>Password</span>
+    </div>
+    <button class="submit-btn" onclick="validateLogin()">Register</button>
+    <p id="message"></p> 
+</div>
+    <script>
+        function validateLogin() {
+            // Retrieve the values entered by the user
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            // Check if the username and password match
+            if (username == "darsh123@gmail.com" && password == "darsh@123")
+             {
+                document.getElementById("message").textContent = "Login successful";
+                document.getElementById("message").style.color = "green";
+                window.location.href = "adddream2.html";
+            } 
+            else {
+                document.getElementById("message").textContent = "Invalid username or password";
+                document.getElementById("message").style.color = "red";
+            }
+        }
+    </script>
+
+</body>

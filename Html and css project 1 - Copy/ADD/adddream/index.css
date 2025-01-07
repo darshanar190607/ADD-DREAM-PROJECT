@@ -1,0 +1,51 @@
+/* Centering the entire form */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250vh; /* Full viewport height */
+    margin: 0;
+    background-color: #f0f0f0; /* Optional background color */
+}
+
+/* Style the form */
+#registrationForm {
+    background-color: white; /* White background for the form */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow around the form */
+    width: 100%;
+    max-width: 600px; /* Maximum width for the form */
+}
+
+/* Style for inputs and buttons */
+input[type="text"], input[type="tel"], input[type="date"], input[type="email"], input[type="number"], select {
+    width: 100%; /* Make inputs take the full width */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style the checkbox table */
+table {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Styling for submit button */
+button[type="submit"] {
+    background-color: #4CAF50; /* Green button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%; /* Full width for the button */
+    font-size: 16px;
+}
+
+/* Hover effect for the submit button */
+button[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+}

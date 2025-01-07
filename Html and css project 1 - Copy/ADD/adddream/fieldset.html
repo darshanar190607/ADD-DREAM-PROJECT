@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        fieldset {
+            margin-bottom: 20px;
+        }
+        legend {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        details {
+            margin-top: 10px;
+        }
+        button {
+            margin-top: 10px;
+            background-color: lightblue;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+        }
+        button:hover {
+            background-color: #deec17;
+            color: black;
+            transform: scale(1.05);
+        }
+        .options {
+            margin-top: 10px;
+            display: none;
+            padding: 10px;
+            background-color: #2c2c2c;
+            border: 1px solid #444;
+            border-radius: 5px;
+        }
+        .options a {
+            display: block;
+            margin: 5px 0;
+            text-decoration: none;
+            color: #ddd;
+            font-weight: bold;
+        }
+        .options a:hover {
+            text-decoration: none;
+            color: #fff;
+        }
+        .sub-options {
+            margin-top: 10px;
+            display: none;
+            padding: 10px;
+            background-color: #333;
+            border: 1px solid #666;
+            border-radius: 5px;
+        }
+        .sub-options span {
+            display: block;
+            margin: 5px 0;
+            color: #eee;
+        }
+    </style>
+</head>
+<body>
+
+<form>
+    <!-- Web Development -->
+    <fieldset style="background-color: lightcoral;">
+        <legend>Web Development</legend>
+        <p>Let's learn step-by-step</p>
+        <details>
+            <summary>Details</summary>
+            Web development is vital for creating modern solutions.
+            <br><br>
+            <button type="button" class="explore-btn">Explore more</button>
+            <div class="options">
+                <a href="https://www.freecodecamp.org/">Various Ways to Learn</a>
+                <a href="https://www.youtube.com/@TraversyMedia">YouTube: Traversy Media</a>
+                <a href="#" class="career-certified-btn">Career Role & Certified Courses</a>
+                <div class="sub-options">
+                    <span><strong>Career & Job Roles:</strong> Front-end Developer, Back-end Developer, Full-stack Developer</span>
+                    <span><strong>Certified Courses:</strong> <a href="https://www.freecodecamp.org/">FreeCodeCamp</a>, <a href="https://www.udemy.com">Udemy</a></span>
+                </div>
+            </div>
+        </details>
+    </fieldset>
+
+    <!-- IoT -->
+    <fieldset style="background-color: peachpuff;">
+        <legend>Internet of Things (IoT)</legend>
+        <p>Connect the world through devices!</p>
+        <details>
+            <summary>Details</summary>
+            IoT connects physical devices to the internet, enabling smart solutions across homes, industries, and cities.
+            <br><br>
+            <button type="button" class="explore-btn">Explore more</button>
+            <div class="options">
+                <a href="https://www.coursera.org/learn/internet-of-things">Various Ways to Learn</a>
+                <a href="https://www.youtube.com/@LearnIoT">YouTube: Learn IoT</a>
+                <a href="#" class="career-certified-btn">Career Role & Certified Courses</a>
+                <div class="sub-options">
+                    <span><strong>Career & Job Roles:</strong> IoT Developer, IoT Architect, Embedded Systems Engineer</span>
+                    <span><strong>Certified Courses:</strong> <a href="https://www.edx.org/course/iot-system-design">edX IoT System Design</a>, <a href="https://www.coursera.org/professional-certificates/iot">Coursera IoT Professional Certificate</a></span>
+                </div>
+            </div>
+        </details>
+    </fieldset>
+
+    <!-- Networking -->
+    <fieldset style="background-color: thistle;">
+        <legend>Networking</legend>
+        <p>Build and maintain communication systems!</p>
+        <details>
+            <summary>Details</summary>
+            Networking is vital for connecting computers and systems, forming the backbone of the internet and modern IT.
+            <br><br>
+            <button type="button" class="explore-btn">Explore more</button>
+            <div class="options">
+                <a href="https://www.udemy.com/course/ccna-complete-networking-fundamentals-course/">Various Ways to Learn</a>
+                <a href="https://www.youtube.com/@NetworkChuck">YouTube: NetworkChuck</a>
+                <a href="#" class="career-certified-btn">Career Role & Certified Courses</a>
+                <div class="sub-options">
+                    <span><strong>Career & Job Roles:</strong> Network Engineer, System Administrator, Network Security Specialist</span>
+                    <span><strong>Certified Courses:</strong> <a href="https://www.cisco.com/c/en/us/training-events/training-certifications/certifications.html">Cisco Certifications</a>, <a href="https://www.comptia.org/certifications/network">CompTIA Network+</a></span>
+                </div>
+            </div>
+        </details>
+    </fieldset>
+
+    <!-- Graphic Designing -->
+    <fieldset style="background-color: lightcyan;">
+        <legend>Graphic Designing</legend>
+        <p>Unleash your creative side!</p>
+        <details>
+            <summary>Details</summary>
+            Graphic designing combines art and technology to communicate ideas visually, essential in branding and media.
+            <br><br>
+            <button type="button" class="explore-btn">Explore more</button>
+            <div class="options">
+                <a href="https://www.skillshare.com/browse/graphic-design">Various Ways to Learn</a>
+                <a href="https://www.youtube.com/@TheFuturAcademy">YouTube: The Futur Academy</a>
+                <a href="#" class="career-certified-btn">Career Role & Certified Courses</a>
+                <div class="sub-options">
+                    <span><strong>Career & Job Roles:</strong> Graphic Designer, UX/UI Designer, Creative Director</span>
+                    <span><strong>Certified Courses:</strong> <a href="https://www.adobe.com/education/certification.html">Adobe Certification</a>, <a href="https://www.coursera.org/specializations/graphic-design">Coursera Graphic Design Specialization</a></span>
+                </div>
+            </div>
+        </details>
+    </fieldset>
+
+    <!-- Cloud Computing -->
+    <fieldset style="background-color: lightblue;">
+        <legend>Cloud Computing</legend>
+        <p>Step into the world of scalable computing!</p>
+        <details>
+            <summary>Details</summary>
+            Cloud computing offers on-demand resources and services over the internet, revolutionizing modern IT operations.
+            <br><br>
+            <button type="button" class="explore-btn">Explore more</button>
+            <div class="options">
+                <a href="https://www.udemy.com/course/learn-cloud-computing/">Various Ways to Learn</a>
+                <a href="https://www.youtube.com/@Simplilearn">YouTube: Simplilearn</a>
+                <a href="#" class="career-certified-btn">Career Role & Certified Courses</a>
+                <div class="sub-options">
+                    <span><strong>Career & Job Roles:</strong> Cloud Architect, Cloud Engineer, DevOps Engineer</span>
+                    <span><strong>Certified Courses:</strong> <a href="https://aws.amazon.com/training/">AWS Training</a>, <a href="https://azure.microsoft.com/en-us/training/">Microsoft Azure</a></span>
+                </div>
+            </div>
+        </details>
+    </fieldset>
+
+    <!-- Machine Learning -->
+    <fieldset style="background-color: mistyrose;">
+        <legend>Machine Learning</legend>
+        <p>Learn how machines think!</p>
+        <details>
+            <summary>Details</summary>
+            Machine learning uses algorithms to enable computers to learn and make decisions, driving innovation in AI.
+            <br><br>
+            <button type="button" class="explore-btn">Explore more</button>
+            <div class="options">
+                <a href="https://www.coursera.org/learn/machine-learning">Various Ways to Learn</a>
+                <a href="https://www.youtube.com/@StatQuest">YouTube: StatQuest</a>
+                <a href="#" class="career-certified-btn">Career Role & Certified Courses</a>
+                <div class="sub-options">
+                    <span><strong>Career & Job Roles:</strong> Data Scientist, AI Engineer, Research Scientist</span>
+                    <span><strong>Certified Courses:</strong> <a href="https://www.udacity.com/course/intro-to-machine-learning--ud120">Udacity Machine Learning</a>, <a href="https://www.coursera.org/professional-certificates/machine-learning">Coursera ML Professional Certificate</a></span>
+                </div>
+            </div>
+        </details>
+    </fieldset>
+
+    <!-- Full Stack -->
+    <fieldset style="background-color: lavender;">
+        <legend>Full Stack</legend>
+        <p>Master both front-end and back-end development!</p>
+        <details>
+            <summary>Details</summary>
+            Full Stack development equips you with the skills to create complete web applications, from user interfaces to databases.
+            <br><br>
+            <button type="button" class="explore-btn">Explore more</button>
+            <div class="options">
+                <a href="https://www.codecademy.com/learn/full-stack">Various Ways to Learn</a>
+                <a href="https://www.youtube.com/@Academind">YouTube: Academind</a>
+                <a href="#" class="career-certified-btn">Career Role & Certified Courses</a>
+                <div class="sub-options">
+                    <span><strong>Career & Job Roles:</strong> Full Stack Developer, Software Engineer, Web Application Developer</span>
+                    <span><strong>Certified Courses:</strong> <a href="https://www.codecademy.com/learn/full-stack">Codecademy Full Stack</a>, <a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/">Udemy Web Development Bootcamp</a></span>
+                </div>
+            </div>
+        </details>
+    </fieldset>
+
+    <!-- Generative AI -->
+    <fieldset style="background-color: lightgoldenrodyellow;">
+        <legend>Generative AI</legend>
+        <p>Explore the cutting-edge of artificial intelligence!</p>
+        <details>
+            <summary>Details</summary>
+            Generative AI focuses on creating new content, such as images, text, and music, using machine learning techniques.
+            <br><br>
+            <button type="button" class="explore-btn">Explore more</button>
+            <div class="options">
+                <a href="https://www.deeplearning.ai/">Various Ways to Learn</a>
+                <a href="https://www.youtube.com/@TwoMinutePapers">YouTube: Two Minute Papers</a>
+                <a href="#" class="career-certified-btn">Career Role & Certified Courses</a>
+                <div class="sub-options">
+                    <span><strong>Career & Job Roles:</strong> AI Researcher, Generative AI Engineer, Data Scientist</span>
+                    <span><strong>Certified Courses:</strong> <a href="https://www.coursera.org/specializations/deep-learning">Deep Learning Specialization</a>, <a href="https://www.udemy.com/course/generative-adversarial-networks/">Udemy: GANs Course</a></span>
+                </div>
+            </div>
+        </details>
+    </fieldset>
+
+    <!-- Cyber Security -->
+    <fieldset style="background-color: lightsteelblue;">
+        <legend>Cyber Security</legend>
+        <p>Secure the digital world!</p>
+        <details>
+            <summary>Details</summary>
+            Cybersecurity protects systems and networks from digital attacks, ensuring data integrity and privacy.
+            <br><br>
+            <button type="button" class="explore-btn">Explore more</button>
+            <div class="options">
+                <a href="https://www.coursera.org/specializations/cyber-security">Various Ways to Learn</a>
+                <a href="https://www.youtube.com/@SecurityTube">YouTube: Security Tube</a>
+                <a href="#" class="career-certified-btn">Career Role & Certified Courses</a>
+                <div class="sub-options">
+                    <span><strong>Career & Job Roles:</strong> Security Analyst, Penetration Tester, Cybersecurity Engineer</span>
+                    <span><strong>Certified Courses:</strong> <a href="https://www.comptia.org/certifications/security">CompTIA Security+</a>, <a href="https://www.isc2.org/Certifications/CISSP">CISSP Certification</a></span>
+                </div>
+            </div>
+        </details>
+    </fieldset>
+
+    <!-- Blockchain -->
+    <fieldset style="background-color: honeydew;">
+        <legend>Blockchain</legend>
+        <p>Redefine trust with decentralized technologies!</p>
+        <details>
+            <summary>Details</summary>
+            Blockchain ensures secure and transparent transactions in a decentralized manner, paving the way for innovations in finance and beyond.
+            <br><br>
+            <button type="button" class="explore-btn">Explore more</button>
+            <div class="options">
+                <a href="https://www.coursera.org/specializations/blockchain">Various Ways to Learn</a>
+                <a href="https://www.youtube.com/@IvanOnTech">YouTube: Ivan on Tech</a>
+                <a href="#" class="career-certified-btn">Career Role & Certified Courses</a>
+                <div class="sub-options">
+                    <span><strong>Career & Job Roles:</strong> Blockchain Developer, Smart Contract Engineer, Blockchain Architect</span>
+                    <span><strong>Certified Courses:</strong> <a href="https://www.edx.org/professional-certificate/blockchain">edX Blockchain Professional Certificate</a>, <a href="https://www.udemy.com/course/blockchain-and-bitcoin-fundamentals/">Udemy Blockchain Fundamentals</a></span>
+                </div>
+            </div>
+        </details>
+    </fieldset>
+</form>
+
+<script>
+    document.querySelectorAll('.explore-btn').forEach(button => {
+        button.addEventListener('click', () => {
+            const options = button.nextElementSibling;
+            options.style.display = options.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+
+    document.querySelectorAll('.career-certified-btn').forEach(button => {
+        button.addEventListener('click', (e) => {
+            e.preventDefault();
+            const subOptions = button.nextElementSibling;
+            subOptions.style.display = subOptions.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+</script>
+
+</body>
+</html>

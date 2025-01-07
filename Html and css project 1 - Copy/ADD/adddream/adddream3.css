@@ -1,0 +1,274 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+body {
+    width: 100%;
+    background-image: url(mainbg.jpg);
+    background-size: cover;
+    background-image: 100%;
+    background-repeat: no-repeat;
+}
+.courses-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.course {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    transition: transform 0.s ease, box-shadow 0.3s ease;
+}
+
+.course:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.course h3 {
+    padding-right: 50px;
+    justify-content: center;
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+}
+
+.course p {
+    font-size: 16px;
+    color: #555;
+    margin: 15px 0;
+}
+
+.course .price {
+    font-size: 20px;
+    color: #000303;
+    font-weight: bold;
+}
+
+.course .limited {
+    font-size: 14px;
+    color: red;
+    font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+    .topic {
+        padding-left: 10%;
+    }
+    ul {
+        margin-left: 0;
+        text-align: center;
+    }
+
+}
+
+h1,
+span {
+    font-family: Arial;
+    font-size: x-large;
+    width: fit-content;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.topic {
+    width: 1200px;
+    height: auto;
+    margin: 20px auto;
+    padding: 50px;
+    padding-left: 18%;
+    font-family: 'Times New Roman';
+    letter-spacing: 5px;
+    line-height: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    /* Semi-transparent background */
+    backdrop-filter: blur(5px);
+}
+
+h1,
+span {
+    font-size: 50px;
+    background-color: black;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+nav {
+    padding: 15px;
+    background-color: black;
+
+}
+
+h2,
+ul,
+li {
+    display: inline;
+}
+
+h2 {
+    background: linear-gradient(135deg, #7f00ff, #00c6ff);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+ul {
+    margin-left: 61%;
+    cursor: pointer;
+    padding: 20px;
+    gap: 10px
+}
+
+li {
+    padding: 7px;
+}
+
+a {
+    color: #ffcc80;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main {
+    color: #b0bec5;
+    font-size: 1.1rem;
+    max-width: 800px;
+
+
+}
+
+a:hover {
+    transition: 0.3s;
+    color: whitesmoke;
+}
+
+h1 {
+    padding-left: 25%;
+}
+
+span {
+    color: green;
+    padding-left: 15%;
+}
+
+.topic {
+    border: 3px solid black;
+    padding: 15px;
+    justify-content: center;
+    padding-left: 15%;
+    background: blur;
+
+}
+
+h3 {
+    font-size: 50px;
+    padding-left: 30%;
+    color: rgb(0, 0, 0);
+}
+
+
+
+.content {
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 0;
+    margin: 0;
+
+}
+
+h4 {
+    font-size: 40px;
+    margin: 0;
+}
+
+
+.content-container {
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+}
+.content{
+    display: flex;
+    align-items: center; /* Vertically align */
+    gap: 20px; /* Add space between the items */
+}
+
+h5{
+    Font-family:'Roboto',sans-serif;
+    font-weight: 100;
+    font-size: 45px;
+}
+.register{
+    padding-left: 40%;
+}
+.register input[type="button"] {
+    height: 50px; /* Increase button height */
+    width: 150px; /* Increase button width */
+    font-size: 18px; /* Adjust font size */
+    font-weight: bold; /* Make the text bold */
+    color: white; /* Button text color */
+    background-color: #2108ff; /* Button background color (green) */
+    border: none; /* Remove border */
+    border-radius: 10px; /* Add rounded corners */
+    cursor: pointer; /* Change cursor to pointer */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Add a shadow for effect */
+    transition: all 0.3s ease; /* Smooth hover effect */
+    
+}
+
+.register input[type="button"]:hover {
+    background-color: #ffef12; /* Slightly darker green on hover */
+    transform: scale(1.1); /* Scale up slightly on hover */
+}
+.footer { 
+    background: #000;
+    height: 40px;
+   
+  }
+  
+  .footer p { 
+    color: #fff;
+    font-size: 20px;  
+    height: 40px; 
+    line-height: 40px;
+    margin: 0;  
+  }
+  @media (max-width: 768px) {
+    .footer {
+        height: auto;
+        padding: 20px;
+    }
+    .footer p {
+        font-size: 12px;
+        text-align: center;
+    }
+}
+/* Ensure the body and HTML elements take full height */
+html, body {
+    height: 100%;
+    margin: 0; /* Remove default margin */
+    display: flex;
+    flex-direction: column; /* Arrange children vertically */
+}
+
+/* Push the footer to the bottom */
+.footer {
+    margin-top: auto; /* Push the footer to the bottom of the page */
+    background: #000; /* Footer background color */
+    color: #fff;
+    height: 40px;
+    text-align: center;
+    line-height: 40px; /* Vertically center the text */
+}

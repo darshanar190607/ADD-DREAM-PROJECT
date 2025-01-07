@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .back-home {
+            margin-bottom: 20px;
+        }
+
+        .back-home button {
+            width: auto;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .back-home button:hover {
+            background-color: #555;
+        }
+
+        #paymentMessage {
+            margin-top: 20px;
+        }
+
+        #videoSection {
+            display: none;
+            text-align: center;
+        }
+
+        video {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="back-home">
+        <button onclick="goToHome()">Back to Home</button>
+    </div>
+
+    <div class="container" id="registerSection">
+        <h1>Course Registration</h1>
+
+        <form id="registerForm">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" required placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="course">Choose Course:</label>
+                <select id="course" required>
+                    <option value="FULL STACK WITH AI">FULL STACK WITH AI</option>
+                    <option value="CYBER SECURITY">CYBER SECURITY</option>
+                    <option value="IOT-Internet Of Things">IOT-Internet Of Things</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="payment">Payment Amount:</label>
+                <input type="number" id="payment" required placeholder="Enter payment amount" readonly>
+            </div>
+            <button type="submit">Register and Pay</button>
+        </form>
+
+        <div id="paymentMessage"></div>
+    </div>
+
+    <div id="videoSection">
+        <h1>Welcome to Your Course</h1>
+        <p>Your course video will start now.</p>
+
+        <video controls>
+            <source src="your-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script>
+        // Function to redirect back to home
+        function goToHome() {
+            location.href = "adddream3.html"; // Replace with the correct path to your home page
+        }
+
+        // Function to update payment based on selected course
+        function updatePayment() {
+            const course = document.getElementById('course').value;
+            const paymentField = document.getElementById('payment');
+
+            if (course === "FULL STACK WITH AI") {
+                paymentField.value = 2999;
+            } else if (course === "CYBER SECURITY") {
+                paymentField.value = 3999;
+            } else if (course === "IOT-Internet Of Things") {
+                paymentField.value = 1999;
+            }
+        }
+
+        // Initialize payment based on the selected course
+        updatePayment();
+
+        // Update payment whenever the course selection changes
+        document.getElementById('course').addEventListener('change', updatePayment);
+
+        document.getElementById('registerForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const course = document.getElementById('course').value;
+            const payment = document.getElementById('payment').value;
+
+            if (payment < 100) {
+                document.getElementById('paymentMessage').innerHTML = '<p style="color:red;">Payment must be at least 100.</p>';
+                return;
+            }
+
+            // Simulate payment processing
+            document.getElementById('paymentMessage').innerHTML = `<p>Thank you, ${name}. Your payment of ₹${payment} has been received.</p>`;
+            
+            // Release confetti
+            confetti({
+                particleCount: 200,
+                spread: 90,
+                origin: { y: 0.6 }
+            });
+
+            // Hide registration form and show video section after 2 seconds
+            setTimeout(function() {
+                document.getElementById('registerSection').style.display = 'none';
+                document.getElementById('videoSection').style.display = 'block';
+            }, 2000);
+        });
+    </script>
+</body>
+</html>

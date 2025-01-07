@@ -1,0 +1,92 @@
+https://docs.google.com/forms/d/e/1FAIpQLSd3dB_zHdVeQ_cWW5scv6JbT6Gvm8L-GF1sbQyzc3-PHT3sFQ/formResponse?usp=pp_url&
+entry.1882544360
+=Ms&
+entry.1161151300
+=Darshan+&
+entry.362661713
+=AR&
+entry.633321202
+=2007-06-19&
+entry.1409620834
+=8807715828&
+entry.1269912835
+=velandipalayam+coimbatore&
+entry.2075001680
+=Coimbatore&
+entry.401644965
+=Tamil+Nadu&
+entry.1185757024
+=641025&
+entry.2039179858
+=India&
+entry.1404820293
+=darsh123@gmail.com&
+entry.1807455929
+=Full+Stack&
+entry.1570456377
+=Raju&
+entry.330125172
+=A
+<b>Full view:</b><br><hr>
+    <div class="content-container">
+    <div class="content">
+        <h4><b>1]Road map for front end </b></h4>
+        <a href="C:\Users\HP\Music\frontend.pdf" download="fullstack.pdf" class="download-button">
+        DOWNLOAD PDF
+    </a>
+    </div>
+    </div>
+    <div class="content-container">
+    <div class="content">
+        <h4><b>2]Road map for back end</b></h4>
+        <a href="#" download="backend" class="download-button">DOWNLOAD PDF</a>
+    </div>
+    </div>
+    <div class="content-container">
+    <div class="content">
+        <h4><b>3]Road map for back end</b></h4>
+        <a href="#" download="backend" class="download-button">DOWNLOAD PDF</a>
+    </div>
+    </div>
+    <div class="content-container">
+    <div class="content">
+        <h4><b>4]Road map for back end</b></h4>
+        <a href="#" download="backend" class="download-button">DOWNLOAD PDF</a>
+    </div>
+    </div>
+    <div class="content-container">
+    <div class="content">
+        <h4><b>5]Road map for back end</b></h4>
+        <a href="#" download="backend" class="download-button">DOWNLOAD PDF</a>
+    </div>
+    </div>
+    <div style="color:white" class="content-container">
+    <div class="content">
+        <h4><b>6]Road map for back end</b></h4>
+        <a href="#" download="backend" class="download-button">DOWNLOAD PDF</a>
+    </div>
+    </div>
+    <div style="color:white" class="content-container">
+    <div class="content">
+        <h4><b>7]Road map for back end</b></h4>
+        <a href="#" download="backend" class="download-button">DOWNLOAD PDF</a>
+    </div>
+    </div>
+    <div style="color:white" class="content-container">
+    <div class="content">
+        <h4><b>8]Road map for back end</b></h4>
+        <a href="#" download="backend" class="download-button">DOWNLOAD PDF</a>
+    </div>
+    </div>
+    <div style="color:white" class="content-container">
+    <div class="content">
+        <h4><b>9]Road map for back end</b></h4>
+        <a href="#" download="backend" class="download-button">DOWNLOAD PDF</a>
+    </div>
+    </div>
+    <div style="color:white" class="content-container">
+    <div class="content">
+        <h4><b>10]Road map for back end</b></h4>
+        <a href="#" download="backend" class="download-button">DOWNLOAD PDF</a>
+    </div>
+    </div>
